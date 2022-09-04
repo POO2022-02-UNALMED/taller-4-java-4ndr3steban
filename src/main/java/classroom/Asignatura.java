@@ -10,10 +10,10 @@ public class Asignatura {
 
     Asignatura() {
         this("Sin nombre",Tipo.FUNDAMENTACION);
-        this(0);
+        //this(0);
     }
 
-    Asignatura(int codigoInterno,Tipo tipo) {
+    Asignatura(Tipo tipo,int codigoInterno) {
         this("Sin nombre", codigoInterno, 0,tipo);
     }
 
@@ -39,7 +39,7 @@ public class Asignatura {
         this.tipo = tipo;
     }
 
-    void cambiarDatos(int codigoInterno) {
+    void cambiarDatosInterno(int codigoInterno) {
         this.codigoInterno = codigoInterno;
     }
 
